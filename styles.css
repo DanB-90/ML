@@ -1,0 +1,150 @@
+:root {
+  --verde-uco: #008b50;
+  --amarillo-uco: #ffca00;
+  --gris-suave: #f5f5f5;
+  --sombra: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--gris-suave);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  background-color: var(--verde-uco);
+  padding: 10px 20px;
+}
+
+.logo {
+  height: 80px;
+  margin-right: 20px;
+}
+
+header {
+  color: white;
+  text-align: left;
+  flex-grow: 1;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 0.9em;
+}
+
+.content-wrapper {
+  display: flex;
+  min-height: calc(100vh - 150px);
+}
+
+.sidebar {
+  width: 250px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 2px 0 5px var(--sombra);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 15px;
+}
+
+.sidebar a {
+  color: var(--verde-uco);
+  text-decoration: none;
+  font-weight: 500;
+  display: block;
+  padding: 8px 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: var(--verde-uco);
+  color: white;
+}
+
+main {
+  flex-grow: 1;
+  padding: 40px;
+  max-width: 1200px;
+}
+
+.tema {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 10px var(--sombra);
+  border-left: 6px solid var(--amarillo-uco);
+}
+
+.tema h2 {
+  color: var(--verde-uco);
+  margin-top: 0;
+}
+
+.tema p {
+  line-height: 1.6;
+}
+
+.video-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+footer {
+  background-color: var(--verde-uco);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    padding: 15px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .logo {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

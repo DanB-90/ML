@@ -6,137 +6,518 @@
   <title>Camino de Aprendizaje - Machine Learning</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
 </head>
 <body>
+  
   <div class="header-container">
+    <button class="sidebar-toggle">☰</button>
     <img src="logo.png" alt="Logo UCO" class="logo" />
     <header>
-      <h1>Viaje de Aprendizaje en Machine Learning</h1>
+      <h1>Aprendizaje de Machine Learning</h1>
       <p>Docente: Daniel Betancur Trujillo | Universidad Católica de Oriente</p>
     </header>
   </div>
-
   <div class="content-wrapper">
     <nav class="sidebar">
       <div class="learning-path">
-        <h3>Tu Camino de Aprendizaje</h3>
+        <h3>Ruta de Aprendizaje</h3>
         <ol>
-          <li><a href="#introduccion" class="completed">1. Introducción</a></li>
-          <li><a href="#fundamentos">2. Fundamentos Matemáticos</a></li>
-          <li><a href="#tipos">3. Tipos de Aprendizaje</a></li>
-          <li><a href="#modelos">4. Modelos Clave</a></li>
-          <li><a href="#implementacion">5. Implementación Práctica</a></li>
-          <li><a href="#proyecto-final">6. Proyecto Final</a></li>
+          <li><a href="#introduccion" class="completed">Introducción</a></li>
+          <li><a href="#tipos">Tipos deaprendizaje</a></li>
+          <li><a href="#modelos">Modelos</a></li>
+          <li><a href="#modelosVSalgoritmos">Modelos y algoritmos en ML</a></li>
+          <li><a href="#workflow">Flujo de trabajo de ML</a></li>
+          <li><a href="#ejemplo">Ejemplo práctico</a></li>
+          <li><a href="#retos">Retos Importantes en ML</a></li>
+          <li><a href="#retos">Algoritmos de Machine Learning</a></li>
+          
         </ol>
       </div>
     </nav>
 
     <main>
       <section class="tema" id="introduccion">
-        <h2>1. Introducción al Machine Learning</h2>
+        <h2>1. Introducción al Machine Learning (ML)</h2>
         <div class="learning-card">
-          <p>🚀 Comenzamos nuestro viaje entendiendo qué es el Machine Learning y cómo está transformando el mundo. Aprenderás:</p>
-          <ul>
-            <li>Definición y contexto histórico</li>
-            <li>Diferencias entre IA, ML y Deep Learning</li>
-            <li>Casos de uso en la industria actual</li>
-          </ul>
+          <p>El Machine Learning (Aprendizaje Automático) es una rama de la inteligencia artificial que permite a los sistemas aprender patrones a partir de datos sin ser programados explícitamente. En esta sección exploraremos los conceptos básicos que sustentan esta tecnología revolucionaria.</p>
           <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/KytW151dpqU" title="Introducción ML"></iframe>
-            <iframe src="https://www.youtube.com/embed/3EhWXqRPaNs" title="Conceptos básicos"></iframe>
-          </div>
-        </div>
-      </section>
-
-      <section class="tema" id="fundamentos">
-        <h2>2. Fundamentos Matemáticos Esenciales</h2>
-        <div class="learning-card">
-          <p>🧮 Base teórica necesaria para entender los algoritmos:</p>
-          <ul>
-            <li>Álgebra lineal aplicada</li>
-            <li>Cálculo diferencial en ML</li>
-            <li>Probabilidad y estadística</li>
-          </ul>
-          <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/0EXg3sCPj6I" title="Matemáticas ML"></iframe>
-            <iframe src="https://www.youtube.com/embed/XNWKJsDNScw" title="Estadística aplicada"></iframe>
+            <iframe src="https://www.youtube.com/embed/KytW151dpqU" title="1"></iframe>
           </div>
         </div>
       </section>
 
       <section class="tema" id="tipos">
-        <h2>3. Tipos de Aprendizaje Automático</h2>
+        <h2>2. Tipos de aprendizaje</h2>
         <div class="learning-card">
-          <p>🔍 Exploramos los diferentes enfoques:</p>
-          <ul>
-            <li>Aprendizaje supervisado vs no supervisado</li>
-            <li>Aprendizaje por refuerzo</li>
-            <li>Aprendizaje semi-supervisado</li>
-          </ul>
+          <p>En Machine Learning existen diferentes paradigmas de aprendizaje según la naturaleza de los datos y los problemas a resolver. El aprendizaje supervisado utiliza datos etiquetados para entrenar modelos predictivos, mientras que el no supervisado descubre patrones ocultos en datos sin etiquetar. También exploraremos el aprendizaje por refuerzo, donde los agentes aprenden mediante interacción con su entorno. Cada enfoque tiene sus fortalezas y aplicaciones específicas en la industria.</p>
           <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/oT3arRRB2Cw" title="Tipos de aprendizaje"></iframe>
-            <iframe src="https://www.youtube.com/embed/tGU1vzdjMfI" title="Comparativa"></iframe>
+            <iframe src="https://www.youtube.com/embed/oT3arRRB2Cw" title="1"></iframe>
+            <iframe src="https://www.youtube.com/embed/NNue6rkDrws" title="2"></iframe>
           </div>
         </div>
       </section>
 
       <section class="tema" id="modelos">
-        <h2>4. Modelos Clave en ML</h2>
+        <h2>3. Modelos</h2>
         <div class="learning-card">
-          <p>🏗️ Conoce los algoritmos fundamentales:</p>
-          <ul>
-            <li>Regresión lineal y logística</li>
-            <li>Árboles de decisión</li>
-            <li>Redes neuronales básicas</li>
-          </ul>
+          <p>Un modelo es una construcción conceptual que, como un mapa o una ecuación, reconstruye la realidad para entenderla mejor y usarla a nuestro favor. Los datos, que a menudo son multidimensionales, nos permiten construir estos modelos y los parámetros ajustan su flexibilidad para adaptarse a la evidencia</p>
           <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/Sb8XVheowVQ" title="Modelos básicos"></iframe>
-            <iframe src="https://www.youtube.com/embed/NNue6rkDrws" title="Redes neuronales"></iframe>
+            <iframe src="https://www.youtube.com/embed/Sb8XVheowVQ" title="1"></iframe>
           </div>
         </div>
       </section>
 
-      <section class="tema" id="implementacion">
-        <h2>5. Implementación Práctica</h2>
+      <section class="tema" id="modelosVSalgoritmos">
+        <h2>4. Modelos y algoritmos en ML</h2>
         <div class="learning-card">
-          <p>💻 Lleva a la práctica lo aprendido:</p>
-          <ul>
-            <li>Flujo de trabajo en TensorFlow</li>
-            <li>Preprocesamiento de datos</li>
-            <li>Entrenamiento y validación</li>
-          </ul>
+          <p>Es común referirse a los términos algoritmos de Machine Learning y modelos de Machine Learning como si tuvieran el mismo significado, pero son conceptos diferentes aunque relacionados. Un algoritmo y un modelo son necesarios para resolver un problema de Machine Learning.
+            Un algoritmo de Machine Learning es esencialmente una serie de pasos que se programan en un computador y que se repiten de forma iterativa. Su propósito principal es encontrar los parámetros más adecuados para el modelo que se está desarrollando. Este proceso a menudo comienza asignando valores iniciales aleatorios a los parámetros y luego refina estos valores progresivamente basándose en la comparación de las predicciones generadas con los resultados reales, reduciendo el error a lo largo de múltiples iteraciones.
+            Por otro lado, un modelo de Machine Learning es el producto final de aplicar un algoritmo. Una vez que el algoritmo ha completado su trabajo (por ejemplo, después de evaluar todas las iteraciones necesarias), el resultado es el modelo. Este modelo es lo que se utiliza para tomar nuevos datos y generar predicciones o responder al problema que se está intentando resolver. En un ejemplo simple, el modelo podría estar compuesto por la ecuación de una línea recta con los parámetros finales encontrados por el algoritmo, junto con el criterio para clasificar los datos de entrada (por ejemplo, si el resultado de la ecuación es positivo o negativo).</p>
           <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/1EwRA_Slw1Q" title="Implementación"></iframe>
-            <iframe src="https://www.youtube.com/embed/E0Hmnixke2g" title="Casos prácticos"></iframe>
+            <iframe src="https://www.youtube.com/embed/tGU1vzdjMfI" title="1"></iframe>
+            <iframe src="https://www.youtube.com/embed/XNWKJsDNScw" title="2"></iframe>
+            <iframe src="https://www.youtube.com/embed/E0Hmnixke2g" title="3"></iframe>
+          </div>
+          <div class="url-container">
+            <iframe src="https://codificandobits.com/blog/algoritmos-machine-learning/" title="4"></iframe>
           </div>
         </div>
       </section>
 
-      <section class="tema" id="proyecto-final">
-        <h2>6. Proyecto Final: Elige Tu Modelo</h2>
+      <section class="tema" id="workflow">
+        <h2>5. Flujo de trabajo de ML</h2>
+        <div class="learning-card">
+          <h3>Flujo de trabajo básico: </h3>
+          <p>1. Recopilación y preparación de datos<br/>
+            2. Selección del modelo adecuado<br/>
+            3. Entrenamiento del modelo<br/>
+            4. Evaluación del rendimiento<br/>
+            5. Despliegue y monitoreo</p>
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/0EXg3sCPj6I" title="1"></iframe>
+            <iframe src="https://www.youtube.com/embed/3EhWXqRPaNs" title="2"></iframe>
+            <iframe src="https://www.youtube.com/embed/1EwRA_Slw1Q" title="2"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="tema" id="ejemplo">
+        <h2>6. Ejemplo práctico: clasificación usando KNN</h2>
         <div class="project-grid">
           <div class="project-card">
-            <h3>Clasificación de Imágenes</h3>
-            <p>Implementa una CNN con TensorFlow</p>
-            <button class="select-button">Seleccionar</button>
+            <h3>Objetivo</h3>
+            <p>Implementar un modelo de Machine Learning para clasificar especies de flores Iris basado en características morfológicas.</p>
           </div>
           <div class="project-card">
-            <h3>Predicción de Precios</h3>
-            <p>Modelo de regresión avanzado</p>
-            <button class="select-button">Seleccionar</button>
+            <h3>Contexto</h3>
+            <p>El dataset Iris es un conjunto de datos clásico que contiene medidas de sépalos y pétalos de tres especies de flores Iris (setosa, versicolor y virginica). Tu tarea es construir un modelo predictivo que aprenda a identificar la especie correcta a partir de las mediciones.</p>
           </div>
           <div class="project-card">
-            <h3>Detección de Anomalías</h3>
-            <p>Aprendizaje no supervisado</p>
-            <button class="select-button">Seleccionar</button>
+            <h3>Pasos a realizar</h3>
+            <p>
+              <ol>
+                <li>Carga y Exploración de Datos</li>
+                  <ul style="list-style-type: disc;">
+                  <li>Cargar el dataset Iris usando scikit-learn.</li>
+                  <li>Identificar las características (features) y la variable objetivo (target).</li>
+                  </ul>
+                <li>Preprocesamiento</li>
+                  <ul style="list-style-type: disc;">
+                  <li>Dividir los datos en conjuntos de entrenamiento (70%) y prueba (30%).</li>
+                  <li>Estandarizar las características usando StandardScaler.</li>
+                  </ul>
+                <li>Modelado</li>
+                  <ul style="list-style-type: disc;">
+                  <li>Entrenar un clasificador KNN con n_neighbors=3.</li>
+                  <li>Realizar predicciones sobre el conjunto de prueba.</li>
+                  </ul>
+                <li>Evaluación</li>
+                  <ul style="list-style-type: disc;">
+                  <li>Calcular la precisión (accuracy) del modelo.</li>
+                  <li>Reportar el porcentaje de aciertos.</li>
+                  </ul>
+              </ol>
+            </p>
           </div>
+          <div class="project-card code-container">
+            <h3>Código</h3>
+            <button class="copy-code" onclick="copyCode(this)">Copiar</button>
+            <pre><code class="language-python">
+# Importar librerías necesarias
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import accuracy_score
+
+# Cargar dataset
+iris = load_iris()
+X = iris.data  # Características (4 medidas de las flores)
+y = iris.target  # Variable objetivo (especies: 0, 1, 2)
+
+# Dividir datos en entrenamiento y prueba
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+
+# Escalar características (importante para muchos algoritmos)
+scaler = StandardScaler()
+X_train = scaler.fit_transform(X_train)
+X_test = scaler.transform(X_test)
+
+# Crear y entrenar modelo (K-Vecinos más Cercanos)
+modelo = KNeighborsClassifier(n_neighbors=3)
+modelo.fit(X_train, y_train)
+
+# Hacer predicciones
+predicciones = modelo.predict(X_test)
+
+# Evaluar rendimiento
+precision = accuracy_score(y_test, predicciones)
+print(f"Precisión del modelo: {precision:.2%}")
+            </code></pre>
+        </div>
         </div>
       </section>
+
+      <section class="tema" id="retos">
+        <h2>7. Retos Importantes en ML</h2>
+        <div class="learning-card">
+            <div class="project-grid">
+                
+                <!-- Retos en Datos -->
+                <div class="project-card">
+                    <h3>1. Retos en Datos</h3>
+                    
+                    <h4>a. Calidad de Datos</h4>
+                    <p><strong>Problema:</strong> Datos incompletos, ruidosos o sesgados ("Garbage In, Garbage Out").</p>
+                    <p><strong>Ejemplo:</strong> Dataset de reconocimiento facial con predominio de un grupo étnico.</p>
+                    <h5>Soluciones:</h5>
+                    <ul>
+                        <li>Técnicas de imputación (KNN, regresión)</li>
+                        <li>Análisis de distribuciones (SHAP, LIME)</li>
+                        <li>Generación de datos sintéticos (GANs, SMOTE)</li>
+                    </ul>
+                    
+                    <h4>b. Escasez de Datos</h4>
+                    <p><strong>Problema:</strong> En dominios como medicina o manufactura, obtener datos etiquetados es costoso.</p>
+                    <p><strong>Ejemplo:</strong> Diagnóstico de enfermedades raras con pocos casos registrados.</p>
+                    <h5>Soluciones:</h5>
+                    <ul>
+                        <li>Transfer Learning (reutilizar modelos preentrenados)</li>
+                        <li>Data Augmentation (rotaciones, transformaciones en imágenes)</li>
+                        <li>Active Learning (selección estratégica de muestras a etiquetar)</li>
+                    </ul>
+                </div>
+    
+                <!-- Retos en Modelado -->
+                <div class="project-card">
+                    <h3>2. Retos en Modelado</h3>
+                    
+                    <h4>a. Overfitting vs. Underfitting</h4>
+                    <p><strong>Overfitting:</strong> Modelo memoriza datos de entrenamiento pero no generaliza.</p>
+                    <p><strong>Ejemplo:</strong> Árbol de decisión con profundidad excesiva.</p>
+                    <h5>Soluciones:</h5>
+                    <ul>
+                        <li>Regularización (L1/L2)</li>
+                        <li>Dropout (en redes neuronales)</li>
+                        <li>Early Stopping</li>
+                    </ul>
+                    
+                    <p><strong>Underfitting:</strong> Modelo demasiado simple para capturar patrones.</p>
+                    <p><strong>Ejemplo:</strong> Regresión lineal aplicada a datos no lineales.</p>
+                    <h5>Soluciones:</h5>
+                    <ul>
+                        <li>Aumentar complejidad del modelo</li>
+                        <li>Feature Engineering</li>
+                    </ul>
+                    
+                    <h4>b. Compensación Sesgo-Varianza</h4>
+                    <p><strong>Dilema:</strong> Reducir el error por sesgo (underfitting) aumenta la varianza (overfitting).</p>
+                    <h5>Enfoque óptimo:</h5>
+                    <ul>
+                        <li>Modelos que minimizan el error generalizado</li>
+                        <li>Ejemplo: Grid Search para hiperparámetros</li>
+                    </ul>
+                </div>
+    
+                <!-- Retos Éticos -->
+                <div class="project-card">
+                    <h3>3. Retos en Ética y Justicia</h3>
+                    
+                    <h4>a. Sesgos Algorítmicos</h4>
+                    <p><strong>Problema:</strong> Modelos que replican/precipitan discriminación.</p>
+                    <p><strong>Ejemplo:</strong> Sistemas de reclutamiento que favorecen un género.</p>
+                    <h5>Soluciones:</h5>
+                    <ul>
+                        <li>Auditorías de fairness (métricas: igualdad de oportunidades, paridad demográfica)</li>
+                        <li>Técnicas de debiasing (reducción de correlaciones espurias)</li>
+                    </ul>
+                    
+                    <h4>b. Explicabilidad</h4>
+                    <p><strong>Problema:</strong> Modelos "caja negra" (Ej: deep learning) dificultan la transparencia.</p>
+                    <h5>Soluciones:</h5>
+                    <ul>
+                        <li>SHAP values, LIME (explicaciones locales)</li>
+                        <li>Uso de modelos intrínsecamente interpretables (árboles, regresiones)</li>
+                    </ul>
+                </div>
+    
+                <!-- Retos Operacionales -->
+                <div class="project-card">
+                    <h3>4. Retos Operacionales</h3>
+                    
+                    <h4>a. Despliegue en Producción (MLOps)</h4>
+                    <p><strong>Problema:</strong> El "valle de la muerte" entre el prototipo y la implementación real.</p>
+                    <p><strong>Ejemplo:</strong> Modelo funciona en Jupyter pero falla en APIs en tiempo real.</p>
+                    <h5>Soluciones:</h5>
+                    <ul>
+                        <li>Contenedores (Docker), orquestación (Kubernetes)</li>
+                        <li>Monitoreo continuo (deriva de datos, métricas en tiempo real)</li>
+                    </ul>
+                    
+                    <h4>b. Escalabilidad</h4>
+                    <p><strong>Problema:</strong> Modelos que no soportan grandes volúmenes de datos o usuarios.</p>
+                    <h5>Soluciones:</h5>
+                    <ul>
+                        <li>Optimización con ONNX, cuantización de modelos</li>
+                        <li>Inferencia en edge devices (TF Lite, Core ML)</li>
+                    </ul>
+                </div>
+    
+                <!-- Retos Emergentes -->
+                <div class="project-card code-container">
+                    <h3>5. Retos Emergentes</h3>
+                    
+                    <h4>a. Privacidad</h4>
+                    <p><strong>Problema:</strong> Riesgo de filtración de datos sensibles durante el entrenamiento.</p>
+                    <p><strong>Ejemplo:</strong> Ataques de membership inference.</p>
+                    <h5>Soluciones:</h5>
+                    <ul>
+                        <li>Differential Privacy (añadir ruido controlado a los datos)</li>
+                        <li>Federated Learning (entrenamiento descentralizado)</li>
+                    </ul>
+                    
+                    <h4>b. Sostenibilidad</h4>
+                    <p><strong>Problema:</strong> Huella de carbono de modelos grandes (Ej: GPT-3 ≈ 190 ton CO₂).</p>
+                    <h5>Soluciones:</h5>
+                    <ul>
+                        <li>Modelos eficientes (TinyML, arquitecturas Sparse)</li>
+                        <li>Green AI (selección de hardware eficiente)</li>
+                    </ul>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <section class="tema" id="algoritmos">
+    <h2>8. Algoritmos de Machine Learning</h2>
+    <div class="learning-card">
+        <div class="table-container">
+          <h3>Instrucciones</h3>
+            <ol class="instruction-list">
+                <li>Selecciona un algoritmo de la lista que desees estudiar</li>
+                <li>Escribe tu nombre completo en la columna <strong>"Estudiante"</strong></li>
+                <li>Haz clic en el botón 💾 para guardar tu información</li>
+            </ol>
+        <div class="table-container">
+            <table class="ml-algorithms-table">
+                <thead>
+                    <tr>
+                        <th>Algoritmo</th>
+                        <th>Tipo de Aprendizaje</th>
+                        <th>Subcategoría</th>
+                        <th>Descripción/Objetivo Principal</th>
+                        <th>Estudiante</th>
+                        <th>Guardar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Regresión Lineal -->
+                    <tr data-id="1">
+                        <td>Regresión Lineal</td>
+                        <td>Supervisado</td>
+                        <td>Regresión</td>
+                        <td>Determina relación lineal entre variables para predecir valores numéricos continuos mediante minimización de errores cuadráticos</td>
+                        <td class="editable-cell" contenteditable="true"></td>
+                        <td><button class="save-btn" onclick="saveNote(this)">💾</button></td>
+                    </tr>
+                    
+                    <!-- Regresión Logística -->
+                    <tr data-id="2">
+                        <td>Regresión Logística</td>
+                        <td>Supervisado</td>
+                        <td>Clasificación</td>
+                        <td>Predice variables categóricas usando función sigmoide para calcular probabilidades de clase</td>
+                        <td class="editable-cell" contenteditable="true"></td>
+                        <td><button class="save-btn" onclick="saveNote(this)">💾</button></td>
+                    </tr>
+                    
+                    <!-- KNN -->
+                    <tr data-id="3">
+                        <td>K Vecinos Más Cercanos (KNN)</td>
+                        <td>Supervisado</td>
+                        <td>Regresión/Clasificación</td>
+                        <td>Predice basado en promedio o clase mayoritaria de K vecinos más cercanos</td>
+                        <td class="editable-cell" contenteditable="true"></td>
+                        <td><button class="save-btn" onclick="saveNote(this)">💾</button></td>
+                    </tr>
+                    
+                    <!-- SVM -->
+                    <tr data-id="4">
+                        <td>Máquina de Soporte Vectorial (SVM)</td>
+                        <td>Supervisado</td>
+                        <td>Clasificación/Regresión</td>
+                        <td>Encuentra hiperplano óptimo de separación con máximo margen, usando kernels para problemas no lineales</td>
+                        <td class="editable-cell" contenteditable="true"></td>
+                        <td><button class="save-btn" onclick="saveNote(this)">💾</button></td>
+                    </tr>
+                    
+                    <!-- Naive Bayes -->
+                    <tr data-id="5">
+                        <td>Naive Bayes</td>
+                        <td>Supervisado</td>
+                        <td>Clasificación</td>
+                        <td>Clasificador probabilístico basado en teorema de Bayes con supuesto de independencia entre características</td>
+                        <td class="editable-cell" contenteditable="true"></td>
+                        <td><button class="save-btn" onclick="saveNote(this)">💾</button></td>
+                    </tr>
+                    
+                    <!-- Árboles de Decisión -->
+                    <tr data-id="6">
+                        <td>Árboles de Decisión</td>
+                        <td>Supervisado</td>
+                        <td>Clasificación/Regresión</td>
+                        <td>Construye estructura jerárquica de decisiones mediante particiones sucesivas del dataset</td>
+                        <td class="editable-cell" contenteditable="true"></td>
+                        <td><button class="save-btn" onclick="saveNote(this)">💾</button></td>
+                    </tr>
+                    
+                    <!-- Random Forest -->
+                    <tr data-id="7">
+                        <td>Random Forest</td>
+                        <td>Supervisado</td>
+                        <td>Clasificación/Regresión</td>
+                        <td>Ensemble de árboles de decisión con selección aleatoria de características para reducir overfitting</td>
+                        <td class="editable-cell" contenteditable="true"></td>
+                        <td><button class="save-btn" onclick="saveNote(this)">💾</button></td>
+                    </tr>
+                    
+                    <!-- Boosting -->
+                    <tr data-id="8">
+                        <td>Boosting</td>
+                        <td>Supervisado</td>
+                        <td>Clasificación/Regresión</td>
+                        <td>Entrena modelos secuencialmente, donde cada nuevo modelo corrige los errores del anterior</td>
+                        <td class="editable-cell" contenteditable="true"></td>
+                        <td><button class="save-btn" onclick="saveNote(this)">💾</button></td>
+                    </tr>
+                    
+                    <!-- Redes Neuronales -->
+                    <tr data-id="9">
+                        <td>Redes Neuronales</td>
+                        <td>Supervisado</td>
+                        <td>Clasificación/Regresión</td>
+                        <td>Arquitectura inspirada en cerebro humano con capas interconectadas para aprendizaje de características complejas</td>
+                        <td class="editable-cell" contenteditable="true"></td>
+                        <td><button class="save-btn" onclick="saveNote(this)">💾</button></td>
+                    </tr>
+                    
+                    <!-- K-Means -->
+                    <tr data-id="10">
+                        <td>K-Means</td>
+                        <td>No Supervisado</td>
+                        <td>Agrupación</td>
+                        <td>Algoritmo de clustering que divide datos en K grupos basados en similitud de características</td>
+                        <td class="editable-cell" contenteditable="true"></td>
+                        <td><button class="save-btn" onclick="saveNote(this)">💾</button></td>
+                    </tr>
+                    
+                    <!-- Reducción de Dimensionalidad -->
+                    <tr data-id="11">
+                        <td>Reducción de Dimensionalidad</td>
+                        <td>No Supervisado</td>
+                        <td>Reducción Dimensional</td>
+                        <td>Técnicas para reducir número de variables manteniendo información relevante</td>
+                        <td class="editable-cell" contenteditable="true"></td>
+                        <td><button class="save-btn" onclick="saveNote(this)">💾</button></td>
+                    </tr>
+                    
+                    <!-- PCA -->
+                    <tr data-id="12">
+                        <td>Análisis de Componentes Principales (PCA)</td>
+                        <td>No Supervisado</td>
+                        <td>Reducción Dimensional</td>
+                        <td>Transforma datos a nuevo sistema de coordenadas con componentes ortogonales de máxima varianza</td>
+                        <td class="editable-cell" contenteditable="true"></td>
+                        <td><button class="save-btn" onclick="saveNote(this)">💾</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </section>
     </main>
   </div>
 
   <footer>
     <p>&copy; 2025 Universidad Católica de Oriente - Ingeniería de Sistemas</p>
   </footer>
+  <script>
+
+    function copyCode(button) {
+        const codeBlock = button.nextElementSibling.textContent;
+        navigator.clipboard.writeText(codeBlock).then(() => {
+            button.textContent = "¡Copiado!";
+            setTimeout(() => {
+                button.textContent = "Copiar";
+            }, 2000);
+        });
+    }
+    
+    document.addEventListener('DOMContentLoaded', (event) => {
+        document.querySelectorAll('pre code').forEach((block) => {
+            hljs.highlightBlock(block);
+        });
+    });
+    </script>
+    <script>
+      document.querySelector('.sidebar-toggle').addEventListener('click', function() {
+          document.body.clientWidth;
+          document.querySelector('.sidebar').classList.toggle('collapsed');
+          document.querySelector('.content-wrapper').classList.toggle('collapsed');
+          this.classList.toggle('collapsed');
+          this.innerHTML = this.classList.contains('collapsed') ? '→' : '☰';
+      });
+    </script>
+    <script>
+      // Sistema de guardado en localStorage
+      function saveNote(button) {
+          const row = button.closest('tr');
+          const note = row.querySelector('.editable-cell').innerText;
+          const algorithmId = row.getAttribute('data-id');
+          
+          // Guardar en localStorage
+          localStorage.setItem(`algoNote-${algorithmId}`, note);
+          
+          // Feedback visual
+          button.textContent = '✅';
+          setTimeout(() => {
+              button.textContent = '💾';
+          }, 2000);
+      }
+      
+      // Cargar notas al iniciar
+      document.addEventListener('DOMContentLoaded', () => {
+          document.querySelectorAll('.ml-algorithms-table tbody tr').forEach(row => {
+              const algorithmId = row.getAttribute('data-id');
+              const savedNote = localStorage.getItem(`algoNote-${algorithmId}`);
+              if(savedNote) {
+                  row.querySelector('.editable-cell').innerText = savedNote;
+              }
+          });
+      });
+    </script>
+
 </body>
 </html>
